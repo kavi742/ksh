@@ -3,6 +3,9 @@
 @date 2023-10-09
 @file main.c
 *******************/
+/**
+Loop that takes input, reads, parses, and executes the input
+ */
 void ksh_loop(void){
   char *line;
   char **args;
@@ -25,6 +28,11 @@ void ksh_loop(void){
   } while (status);
 }
 
+/**
+@param argc - Argument Count
+@param argv - Argument Vector
+@return - Status Code
+*/
 int main(int argc, char *argv[]){
   // Load Config
   
